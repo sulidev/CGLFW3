@@ -1,5 +1,20 @@
 module CGLFW3 [system] {
-    header "shim.h"
-    link "glfw"
-    export *
+    explicit module OSX {
+        header "shim.h"
+        link "glfw"
+        export *
+    }
+
+    explicit module LINUX {
+        header "shim.h"
+        link "glfw"
+        export *
+
+        link "X11"
+        link "Xxf86vm"
+        link "Xrandr"
+        link "Xi"
+        link "Xinerama"
+        link "Xcursor"
+    }
 }

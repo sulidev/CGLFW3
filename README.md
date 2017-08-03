@@ -2,4 +2,4 @@
 
 Forked from [SwiftGL](https://github.com/SwiftGL/CGLFW3)
 
-Adapted for MacOS + [homebrew](https://brew.sh)
+Adapted for MacOS + [homebrew](https://brew.sh) and Linux too!
